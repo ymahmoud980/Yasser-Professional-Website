@@ -1,0 +1,141 @@
+.expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+    animation: slideUpFade 0.6s ease-out forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+}
+
+.expertise-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.expertise-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--divider);
+}
+
+.expertise-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* Control Systems Grid */
+.system-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.system-item {
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 15, 24, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.system-item:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+.system-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.system-tag {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Software List */
+.software-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.software-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+/* Capabilities Grid */
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.capability-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-primary);
+    padding: 1.25rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    border: 1px dashed var(--divider);
+    transition: all 0.3s ease;
+}
+
+.capability-item:hover {
+    border-style: solid;
+    border-color: var(--accent-blue);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .system-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+}

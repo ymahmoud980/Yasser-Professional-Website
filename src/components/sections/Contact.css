@@ -1,0 +1,132 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+}
+
+.info-card {
+    height: 100%;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(26, 37, 54, 0.4) 0%, rgba(10, 15, 24, 0.8) 100%);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.method-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.method-icon {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--divider);
+}
+
+.method-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.method-label {
+    letter-spacing: 1px;
+}
+
+.method-value {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a.method-value:hover {
+    color: var(--accent-blue);
+}
+
+.contact-form-wrapper {
+    padding: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    background: rgba(10, 15, 24, 0.4);
+    border: 1px solid var(--divider);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    background: rgba(10, 15, 24, 0.8);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .info-card,
+    .contact-form-wrapper {
+        padding: 2rem;
+    }
+}

@@ -11,7 +11,7 @@ const Certifications = () => {
             id: "ID-No. 2557/10",
             icon: <ShieldCheck size={40} className="text-gold" />,
             desc: "Specialized in Process Safety Instrumented Systems (SIS) globally.",
-            standards: ["IEC 61511", "IEC 61508"],
+            standards: ["IEC 61508", "IEC 61511"],
             featured: true
         },
         {
@@ -19,8 +19,8 @@ const Certifications = () => {
             org: "Engineers Australia",
             id: "EA ID 5131886",
             icon: <Award size={40} className="text-blue" />,
-            desc: "Certified in Automation and Control Engineering (Skill Level #1).",
-            standards: ["ANZSCO 233513"],
+            desc: "Certified Professional Engineer (Skill Level #1) in Instrumentation, Automation and Control.",
+            standards: ["EA ID 5131886"],
             featured: false
         },
         {

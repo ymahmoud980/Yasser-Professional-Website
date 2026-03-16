@@ -6,7 +6,7 @@ import './Insights.css';
 const Insights = () => {
     const [activeTab, setActiveTab] = useState('All');
 
-    const publicationTypes = ['All', 'Articles', 'Technical Papers', 'Research', 'Blog'];
+    const publicationTypes = ['All', 'Technical Guides', 'PDF Checklists', 'Pine Script Indicators', 'Articles'];
 
     const publications = [
         {
@@ -24,18 +24,18 @@ const Insights = () => {
             excerpt: "Understanding the necessity of independent layers of protection and why integrating DCS and SIS can severely compromise overall plant integrity."
         },
         {
-            title: "Risk-Based Engineering in EPC Projects",
-            type: "Research",
-            topic: "Project Execution",
-            readTime: "20 min read",
-            excerpt: "A comprehensive study on how shifting from reactive to proactive risk registers during the FEED phase saves millions during commissioning and start-up."
+            title: "SIL Verification Checklist",
+            type: "PDF Checklists",
+            topic: "Functional Safety",
+            readTime: "2 min read",
+            excerpt: "A comprehensive checklist for verifying SIL loops during brownfield upgrades."
         },
         {
-            title: "5 Strategies for Tuning Anti-Surge Control Loops",
-            type: "Blog",
-            topic: "Optimization",
-            readTime: "5 min read",
-            excerpt: "Practical, field-tested methodologies for stabilizing compressor operations in high-demand petrochemical environments."
+            title: "Advanced Trading Indicator",
+            type: "Pine Script Indicators",
+            topic: "Algorithmic Trading",
+            readTime: "Code",
+            excerpt: "Custom Pine Script indicator built for systematic trend analysis."
         }
     ];
 
@@ -45,9 +45,9 @@ const Insights = () => {
 
     return (
         <SectionWrapper
-            id="insights"
-            title="Publications & Insights"
-            subtitle="A central hub for my published articles, peer-reviewed technical papers, research documents, and professional blog posts."
+            id="resources"
+            title="Articles & Resources"
+            subtitle="A central hub for my technical guides, PDF checklists, Pine Script indicators, and professional articles."
             className="bg-secondary"
         >
             <div className="insights-container mt-8">

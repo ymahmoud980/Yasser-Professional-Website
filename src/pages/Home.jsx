@@ -1,26 +1,22 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
-import Services from '../components/sections/Services';
 import Experience from '../components/sections/Experience';
-import Expertise from '../components/sections/Expertise';
 import Certifications from '../components/sections/Certifications';
-import Portfolio from '../components/sections/Portfolio';
+import Academy from '../components/sections/Academy';
 import Insights from '../components/sections/Insights';
-import Contact from '../components/sections/Contact';
+import Newsletter from '../components/sections/Newsletter';
 
 const Home = () => {
     return (
         <div className="home-container">
             <Hero />
             <About />
-            <Services />
             <Experience />
-            <Expertise />
             <Certifications />
-            <Portfolio />
+            <Academy />
             <Insights />
-            <Contact />
+            <Newsletter />
         </div>
     );
 };

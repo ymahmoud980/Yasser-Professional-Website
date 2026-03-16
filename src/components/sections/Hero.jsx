@@ -18,31 +18,30 @@ const Hero = () => {
                 <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
                     <span className="hero-badge font-mono">
                         <span className="pulse-dot"></span>
-                        Global Technical Authority
+                        Instrumentation, Process Control & Functional Safety
                     </span>
                 </div>
 
                 <h1 className="hero-title animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                    Precision Engineering & <span className="text-gradient">Functional Safety</span> Expert
+                    Mastering<br />
+                    <span className="text-gradient">PROCESS CONTROL & FUNCTIONAL SAFETY</span>
                 </h1>
 
                 <h2 className="hero-subtitle animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                    Yasser Mahmoud | Global Technical Authority | 25+ Years Experience
+                    26 Years Global Oil & Gas Experience | Certified Functional Safety Engineer (TÜV Rheinland) | P.Eng (Engineers Australia & WES Canada)
                 </h2>
 
                 <p className="hero-desc animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                    Delivering Strategic Risk-Based Safety Solutions and Advanced Control Systems for High-Stakes Industrial Facilities Worldwide.
+                    Sharing decades of field-tested engineering knowledge, technical guides, <br />
+                    and advanced insights to educate the next generation of engineers.
                 </p>
 
                 <div className="hero-actions animate-fade-in" style={{ animationDelay: '0.5s' }}>
-                    <a href="#contact" className="btn btn-primary">
-                        Request Consultation <ArrowRight size={18} className="ml-2" />
+                    <a href="#newsletter" className="btn btn-primary">
+                        Join My Private Newsletter <ArrowRight size={18} className="ml-2" />
                     </a>
-                    <a href="#services" className="btn btn-outline">
-                        Book Training <Calendar size={18} className="ml-2" />
-                    </a>
-                    <a href="/Yasser_Mahmoud_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-gold flex-center">
-                        Download CV <Download size={18} className="ml-2" />
+                    <a href="#academy" className="btn btn-outline">
+                        Explore Academy Courses <Calendar size={18} className="ml-2" />
                     </a>
                 </div>
             </div>

@@ -9,14 +9,14 @@ const Experience = () => {
             id: "koc",
             period: "May 2007 – Present",
             company: "Kuwait Oil Company (KOC)",
-            role: "Senior Instrument & Functional Safety Engineer",
+            role: "Senior Independent Engineering Consultant",
             location: "Kuwait",
-            desc: "Lead Technical Authority and Asset Owner representative with full responsibility for engineering, design, and technical supervision across South & East Kuwait Directorates.",
+            desc: "Lead Technical Authority and Asset Owner representative with full responsibility for engineering, design, and technical supervision. Owning Safety-Critical decisions across South & East Kuwait Directorates.",
             highlights: [
+                "Technical Authority for SIS / ICSS (IEC 61508 / IEC 61511).",
                 "Initiate new projects via Project Stage-Gate System (PGS).",
                 "Chair and contribute to PHA (HAZOP, HAZID, SIL Verification, QRA) studies.",
-                "Full EPC lifecycle management: FEED, Detailed Design, FAT/SAT, and Start-Up.",
-                "Engineering of DCS, ESD, F&G, SCADA, and ICS Triplex Control Systems."
+                "Full EPC lifecycle management: FEED, Detailed Design, FAT/SAT, and Start-Up."
             ],
             projects: ["GC-30 / GC-32 Sour Crude Facilities", "GC-24 & BS-131/132 Gas Booster Stations", "New EWTIP Plants (Raudhatain)", "Tank Vapor/Flare System GC-25"]
         },

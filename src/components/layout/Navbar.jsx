@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo_academy_v2.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -17,11 +17,10 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Portfolio', href: '#portfolio' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '#hero' },
+        { name: 'About Yasser', href: '#about' },
+        { name: 'The Engineering Academy', href: '#academy' },
+        { name: 'Articles/Resources', href: '#resources' },
     ];
 
     const handleScrollToSection = (e, href) => {
@@ -37,8 +36,17 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled glass-header' : ''}`}>
             <div className="container navbar-container">
-                <Link to="/" className="navbar-logo">
-                    <img src={logo} alt="Yasser Mahmoud Consulting" className="logo-icon" />
+                <Link
+                    to="/"
+                    className="navbar-logo"
+                    onClick={(e) => {
+                        if (window.location.pathname === '/') {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                    }}
+                >
+                    <img src={logo} alt="Yasser Mahmoud Global Engineering Academy" className="logo-icon" />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -53,10 +61,10 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-                    <a href="#contact"
-                        onClick={(e) => handleScrollToSection(e, '#contact')}
+                    <a href="#newsletter"
+                        onClick={(e) => handleScrollToSection(e, '#newsletter')}
                         className="btn btn-primary ml-4">
-                        Book Consultation
+                        Join Newsletter
                     </a>
                 </div>
 
@@ -78,10 +86,10 @@ const Navbar = () => {
                         {link.name}
                     </a>
                 ))}
-                <a href="#contact"
-                    onClick={(e) => handleScrollToSection(e, '#contact')}
+                <a href="#newsletter"
+                    onClick={(e) => handleScrollToSection(e, '#newsletter')}
                     className="btn btn-primary mobile-btn">
-                    Book Consultation
+                    Join Newsletter
                 </a>
             </div>
         </nav>

@@ -1,0 +1,85 @@
+Comprehensive master list of course topics
+
+Track 1: Process Measurement and Analysis
+Focus: Engineering, applying, and mastering the selection of field devices for complex process media.
+1.1 Principles of Pressure Measurement: Application, Engineering, and Selection
+1.2 Level Measurement Technologies and Selection (including but not limited to DP, Guided Wave Radar, Nucleonic, and Ultrasonic)
+1.3 Flow Measurement Engineering and Selection (including but not limited to DP, Coriolis, Ultrasonic, Magnetic, and Multi-Phase Flow Meters - MPFM)
+1.4 Temperature Sensing and Selection (including RTDs, Thermocouples, Thermowells, and Wake Frequency Calculations)
+1.5 Online Process Analyzers Selection and Application (including but not limited to Gas Chromatography, Spectrometry, and CEMS)
+1.6 Liquid Analytical Instrumentation Selection (including pH, Conductivity, Dissolved Oxygen, and more)
+1.7 Instrument Calibration, Metrology, and Smart Field Device Diagnostics
+1.8 Hazardous Area Classifications and Intrinsically Safe / Explosion-Proof Equipment Selection
+Track 2: Process Control and Final Elements
+Focus: Manipulating the process safely, efficiently, and effectively.
+2.1 Process Dynamics and Practical PID Controller Tuning
+2.2 Control Valve Sizing, Selection, and Noise/Cavitation Mitigation
+2.3 Advanced Regulatory Control: Cascade, Feedforward, Ratio, and Split-Range
+2.4 Control Valve Actuators (Pneumatic, Hydraulic, Electric) and Smart Digital Positioners Selection
+2.5 Introduction to Multivariable Control and Model Predictive Control (MPC)
+2.6 Relief Valves, Rupture Disks, and Mechanical Overpressure Protection Selection
+Track 3: Equipment and Package Instrumentation & Control
+Focus: Dedicated control strategies for major mechanical and process packages.
+3.1 Rotating Equipment Control: Pump Protection, Instrumentation, and Interlocks
+3.2 Compressor Control Systems: Centrifugal/Reciprocating Instrumentation and Anti-Surge Control
+3.3 Separation Package Instrumentation and Control: 2-Phase and 3-Phase Separators
+3.4 Desalter Instrumentation, Control Loops, and Interface Measurement Selection
+3.5 Fired Heater and Boiler Control Systems: Combustion, Drum Level, and Burner Management Systems (BMS)
+Track 4: Fire & Gas Detection and Protection Systems
+Focus: Designing, selecting, and engineering critical life and asset protection systems.
+4.1 Fire & Gas Philosophy, Risk Assessment, and Detector Performance Mapping
+4.2 Toxic and Combustible Gas Detectors: Engineering, Placement, and Technology Selection
+4.3 Flame and Heat Detectors: Engineering, Placement, and Technology Selection
+4.4 F&G Logic Solvers, Alarm Systems, and Integration with Plant ESD Systems
+4.5 F&G System Deliverables, Maintenance, and Calibration Strategies
+Track 5: Digital Networks, Power, and System Integration
+Focus: The nervous system of the plant—architecture, power, logic, and human interfaces.
+5.1 Architecture of Control Systems: PLCs, DCS, and SCADA
+5.2 Instrumentation and Control Systems Power Supply, UPS, and Power Distribution Networks
+5.3 Industrial Communication Protocols (including but not limited to Modbus, HART, and Profibus)
+5.4 Advanced Field Networks: Foundation Fieldbus, Ethernet/IP, and WirelessHART
+5.5 Alarm Management Strategies and Rationalization (ISA-18.2)
+5.6 High-Performance HMI / GUI Design Principles for Operator Effectiveness
+5.7 Cybersecurity for Industrial Control Systems (ICS/OT Security)
+Track 6: Engineering Deliverables and Project Execution
+Focus: Generating the core documentation and executing projects according to global gate systems.
+6.1 Projects’ Decision Support Package (DSP) Development according to Project Gate System (PGS)
+6.2 Instrumentation and Process Control Deliverables: Development and Review of P&IDs
+6.3 Detailed Engineering Deliverables: Cause & Effect (C&E) Matrices, Loop Drawings, and Wiring Diagrams
+6.4 Instrument Index, I/O Lists, and Datasheet Development and Review
+Track 7: Functional Safety - The Device Level (Source: IEC 61508)
+Focus: Understanding the foundational reliability engineering behind safety equipment.
+7.1 The IEC 61508 Framework: The Foundation of Functional Safety
+7.2 Hardware Fault Tolerance (HFT) and Safe Failure Fractions (SFF)
+7.3 Reliability Engineering Basics: Failure Rates, MTBF, and MTTF
+7.4 FMEDA in Smart Devices and Device Selection Strategies for Safety Services
+7.5 Device Certification vs. "Prior Use" / "Proven in Use" Justifications
+Track 8: Process Industry Safety Lifecycle (Source: IEC 61511)
+Focus: Executing safety engineering from concept to decommissioning.
+8.1 The IEC 61511 Safety Lifecycle Phase by Phase
+8.2 Hazard & Risk Assessment: Transitioning from HAZOP to LOPA
+8.3 Developing a Robust Safety Requirements Specification (SRS)
+8.4 SIF Design and Selection: Voting Architectures, Common Cause Failures (β-factor), and Diversity
+8.5 SIL Verification: PFDavg​ Calculations and Target SIL Achievement
+8.6 Operations, Maintenance, Proof Testing Design, and Partial Stroke Testing (PST)
+8.7 Management of Change (MOC) and Decommissioning Safety Systems
+Track 9: Advanced Engineering Masterclasses
+Focus: Bridging theory and the reality of plant operations and brownfield challenges.
+9.1 BPCS vs. SIS: The Criticality of Independence, Separation, and Shared Components
+9.2 Overcoming "Paper Safety": Real-World Pitfalls in SIL Realization and Field Installations
+9.3 Revamping and Migrating Legacy Control and Safety Systems in Brownfield Sites
+
+
+Track 10: Artificial Intelligence in Instrumentation, Control, and Safety
+Focus: Deploying Machine Learning and AI in Operational Technology (OT) to optimize performance, enhance safety, and predict failures without compromising plant stability.
+10.1 Foundations of Industrial AI: Demystifying Machine Learning, Deep Learning, and Edge AI for Control Engineers
+10.2 AI-Empowered Predictive Maintenance (PdM) and Asset Health Monitoring: Moving Beyond Condition-Based Maintenance for Valves, Pumps, and Compressors
+10.3 Next-Generation Pipeline Leak Detection Systems (PLDS): Leveraging AI for Acoustic, Fiber Optic, and Computational Pipeline Monitoring (CPM) False Alarm Reduction
+10.4 Plant Operation and Advanced Process Control (APC) Leveraging AI: Neural Networks for Non-Linear Control and Soft Sensors (Inferential Measurement)
+10.5 Power Optimization and Energy Management: AI-Driven Load Shedding, Compressor Load Balancing, and Fired Heater Efficiency Tuning
+10.6 Computer Vision in Operational Technology: AI for Thermal Leak Detection, Flare Optimization, and Automated Gauge/Dial Reading
+10.7 AI in Alarm Management (ISA-18.2): Dynamic Alarm Rationalization, Flood Suppression, and Root Cause Analysis during Plant Upsets
+10.8 AI and Functional Safety (IEC 61508/61511): The Challenges of Determinism, Evaluating AI/ML Reliability, and Dynamic Risk Assessment
+10.9 Generative AI and Large Language Models (LLMs) in Engineering: Automating P&ID Reviews, SRS Generation, and Troubleshooting from O&M Manuals
+10.10 Edge vs. Cloud AI Architectures in ICS: Navigating Latency, OT Cybersecurity, and Integrating AI with Existing DCS/SCADA Systems
+

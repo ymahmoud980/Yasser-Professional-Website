@@ -9,7 +9,7 @@ const Experience = () => {
             id: "koc",
             period: "May 2007 – Present",
             company: "Kuwait Oil Company (KOC)",
-            role: "Senior Independent Engineering Consultant",
+            role: "Senior Engineering Consultant",
             location: "Kuwait",
             desc: "Lead Technical Authority and Asset Owner representative with full responsibility for engineering, design, and technical supervision. Owning Safety-Critical decisions across South & East Kuwait Directorates.",
             highlights: [

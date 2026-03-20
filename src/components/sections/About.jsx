@@ -1,52 +1,69 @@
 import React from 'react';
 import SectionWrapper from '../layout/SectionWrapper';
-import { Award, Briefcase, GraduationCap, CheckCircle2, Shield, Settings, FileSearch, PenTool, Users, Languages } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, CheckCircle2, Shield, Settings, FileSearch, PenTool, Users, Languages, Target, Building2 } from 'lucide-react';
 import './About.css';
 
 const About = () => {
     return (
-        <SectionWrapper id="about" title="About Yasser Mahmoud" subtitle="P.Eng., TÜVFSEng., W.E.S.">
+        <SectionWrapper id="about" title="Message from the Principal" subtitle="Chartered Instrumentation & Process Safety Engineer">
             <div className="about-grid">
-                {/* Left Column: Image Placeholder & Quick Stats */}
+                {/* Left Column: Credentials Summary */}
                 <div className="about-visuals sticky-panel">
-                    <div className="headshot-placeholder">
-                        <div className="placeholder-text">
-                            <span className="font-mono text-secondary">PROFESSIONAL HEADSHOT</span>
-                            <span className="font-mono text-gold text-sm mt-2">[Insert Image Here]</span>
-                        </div>
-                    </div>
-
                     <div className="experience-badge mt-8">
-                        <div className="years text-blue">25+</div>
-                        <div className="years-text">Years of Engineering <br />Excellence</div>
+                        <div className="years text-blue">26+</div>
+                        <div className="years-text">Years of Global <br />Industry Experience</div>
                     </div>
                     
                     <div className="languages-card card mt-6">
                         <div className="flex items-center mb-4">
+                            <Award size={24} className="text-gold mr-3" />
+                            <h4 className="text-lg font-bold">Chartered Credentials</h4>
+                        </div>
+                        <ul className="about-bullets">
+                            <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>P.Eng.</strong> Engineers Australia</li>
+                            <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>TÜV FSEng.</strong> TÜV Rheinland Germany</li>
+                            <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>W.E.S.</strong> Canada</li>
+                        </ul>
+                    </div>
+
+                    <div className="languages-card card mt-6">
+                        <div className="flex items-center mb-4">
                             <Languages size={24} className="text-gold mr-3" />
-                            <h4 className="text-lg font-bold">Language Proficiency</h4>
+                            <h4 className="text-lg font-bold">Languages</h4>
                         </div>
                         <ul className="about-bullets">
                             <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>Fluent:</strong> Arabic & English</li>
-                            <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>Elementary:</strong> Turkish & French</li>
+                            <li><CheckCircle2 size={16} className="text-blue mr-2" /> <strong>Elementary:</strong> Turkish</li>
                         </ul>
                     </div>
                 </div>
 
-                {/* Right Column: Detailed Content */}
+                {/* Right Column: Content */}
                 <div className="about-content">
-                    <div className="about-intro">
-                        <p className="lead-text text-gradient font-bold mb-6">
-                            I am a Senior Instrumentation, Automation, Control, and Functional Process Safety Engineer with 25 years of practical experience in the Oil & Gas industry, spanning onshore, offshore, and subsea projects.
-                        </p>
-                        <p className="text-secondary mb-8">
-                            Throughout my career, I have established myself as a technical authority and subject matter expert, specializing in the entire project lifecycle from conceptual design and FEED to commissioning and operational support.
+                    {/* Mission Statement */}
+                    <div className="about-intro bg-secondary/30 p-8 rounded-lg border border-white/5 mb-12">
+                        <h2 className="text-2xl font-bold mb-4 text-white">The Academy</h2>
+                        <h3 className="section-heading"><Target className="mr-3 text-gold" /> Institutional Mission</h3>
+                        <p className="text-secondary leading-relaxed">
+                            To bridge the gap between complex engineering theory and industrial reality by providing world-class, field-proven training in Instrumentation, Automation, and Functional Safety. We empower the next generation of engineers with the technical precision and safety-first mindset required to lead the global energy evolution.
                         </p>
                     </div>
 
+                    {/* Principal's Background */}
                     <div className="content-section">
+                        <h2 className="text-2xl font-bold mb-8 text-white border-b border-gray-800 pb-4">The Founder</h2>
+                        <h3 className="section-heading"><Users className="mr-3 text-gold" /> Principal Profile</h3>
+                        <p className="text-secondary mb-4">
+                            The Academy is led by <strong>Eng. Y. Mahmoud</strong>, a Senior Instrumentation, Automation, Control, and Functional Process Safety Engineer with 26 years of practical experience in the Oil & Gas industry, spanning onshore, offshore, and subsea projects globally.
+                        </p>
+                        <p className="text-secondary mb-8">
+                            As a technical authority and subject matter expert, the Principal specializes in the entire project lifecycle from conceptual design and FEED to commissioning and operational support.
+                        </p>
+                    </div>
+
+                    <div className="content-section mt-12">
                         <h3 className="section-heading"><Award className="mr-3 text-gold" /> Professional Credentials</h3>
-                        <p className="text-secondary mb-4">My expertise is recognized globally through several prestigious certifications and memberships:</p>
+                        <p className="text-secondary mb-4">Academic and professional recognition includes:</p>
                         <ul className="detailed-list">
                             <li><strong>Professional Engineer (P.Eng.):</strong> Certified in Automation and Control (Skill Level 1) by Engineers Australia.</li>
                             <li><strong>Certified Functional Safety Engineer (TÜVFSEng):</strong> Certified by TÜV Rheinland, Germany for Safety Instrumented Systems (SIS) according to IEC 61508 and 61511.</li>
@@ -57,32 +74,26 @@ const About = () => {
                     </div>
 
                     <div className="content-section mt-12">
-                        <h3 className="section-heading"><Settings className="mr-3 text-gold" /> Core Capabilities and Technical Expertise</h3>
-                        <p className="text-secondary mb-4">In my current role as a Senior Engineer at Kuwait Oil Company (KOC), I serve as the lead technical authority and asset owner representative. My responsibilities include:</p>
+                        <h3 className="section-heading"><Building2 className="mr-3 text-gold" /> Current Appointment</h3>
+                        <p className="text-secondary mb-4">
+                            Currently serving as Senior Engineering Consultant at Kuwait Oil Company (KOC), providing lead technical authority and asset owner representation with full responsibility for engineering, design, and technical supervision of Safety-Critical decisions across South & East Kuwait Directorates.
+                        </p>
+                    </div>
+
+                    <div className="content-section mt-12">
+                        <h3 className="section-heading"><Settings className="mr-3 text-gold" /> Core Technical Expertise</h3>
                         <ul className="detailed-list">
-                            <li><strong>Project Leadership & Initiation:</strong> Initiate new projects using the Project Stage-Gate System (PGS), leading site surveys and data gathering to issue Decision Support Packages (DSP).</li>
-                            <li><strong>Engineering & Design Mastery:</strong> Lead preparation and review of P&IDs, PFDs, Control Philosophies, and SOW. Certified approver for DCS, ESD, F&G, SCADA, CMS, and PLDS specifications.</li>
-                            <li><strong>Functional Safety Management:</strong> Deeply involved in Process Hazard Analysis (PHA), chairing/contributing to HAZOP, HAZID, SIL assessment, and SIL verification. Issue and approve Safety Requirement Specifications (SRS).</li>
-                            <li><strong>Technical Calculations:</strong> Perform precise sizing calculations for control valves, actuators, orifice plates, and safety relief valves using InstruCalc.</li>
-                            <li><strong>Field & Site Execution:</strong> Supervise construction activities, cable laying, instrument installation, and witness Factory Acceptance Tests (FAT) and Site Acceptance Tests (SAT).</li>
-                            <li><strong>Commissioning & Start-Up:</strong> Lead loop testing, cabinet power-ups, PID tuning, and live functional testing during plant start-up.</li>
+                            <li><strong>Functional Safety Management:</strong> Process Hazard Analysis (PHA), HAZOP, HAZID, SIL assessment, and SIL verification. Safety Requirement Specifications (SRS) development and approval.</li>
+                            <li><strong>Engineering & Design:</strong> P&IDs, PFDs, Control Philosophies, and Scope of Work preparation and review. Certified approver for DCS, ESD, F&G, SCADA, CMS, and PLDS specifications.</li>
+                            <li><strong>Technical Calculations:</strong> Control valve sizing, actuator sizing, orifice plate calculations, and safety relief valve sizing using InstruCalc.</li>
+                            <li><strong>Project Execution:</strong> Full EPC lifecycle management from FEED through Detailed Design, FAT/SAT, and Plant Start-Up.</li>
                         </ul>
                     </div>
 
                     <div className="content-section mt-12">
-                        <h3 className="section-heading"><Briefcase className="mr-3 text-gold" /> Professional Journey</h3>
+                        <h3 className="section-heading"><Users className="mr-3 text-gold" /> Professional Journey</h3>
                         <p className="text-secondary mb-4">
-                            Before joining KOC in 2007, I spent eight years at ENPPI, the leading EPC company in Egypt, where I executed full engineering and construction responsibilities for high-profile petrochemical developments. My career began at PETROJET, focusing on the design and commissioning of Fire & Gas systems in oil fields.
-                        </p>
-                    </div>
-
-                    <div className="content-section mt-12">
-                        <h3 className="section-heading"><Users className="mr-3 text-gold" /> Commitment to Excellence & Mentorship</h3>
-                        <p className="text-secondary mb-4">
-                            Beyond my technical project work, I am a core member of the KOC Standards Review Committee, where I help define the future of instrumentation and functional safety standards. I am also passionate about knowledge sharing, regularly conducting technical training courses for engineers and contractors to foster the next generation of industry talent.
-                        </p>
-                        <p className="text-secondary highlight-quote border-l-4 border-blue pl-4 py-2 mt-6">
-                            "I am a self-starter and a highly committed team player who thrives under the pressure of complex, large-scale industrial challenges."
+                            Prior to joining KOC in 2007, eight years were spent at ENPPI, the leading EPC company in Egypt, executing full engineering and construction responsibilities for high-profile petrochemical developments. The career began at PETROJET, focusing on the design and commissioning of Fire & Gas systems in oil fields.
                         </p>
                     </div>
                 </div>

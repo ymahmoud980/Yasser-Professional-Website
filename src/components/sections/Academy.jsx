@@ -137,7 +137,7 @@ const Academy = () => {
     ];
 
     return (
-        <SectionWrapper id="academy" title="The Engineering Academy" subtitle="My comprehensive 10-Track curriculum designed to transfer decades of field experience to the next generation of engineers.">
+        <SectionWrapper id="academy" title="The Academy" subtitle="A comprehensive 10-Track curriculum designed to transfer decades of field experience to the next generation of engineers.">
             <div className="container mt-12">
                 <div className="flex flex-col gap-12">
                     {tracks.map((track, idx) => (
@@ -185,10 +185,10 @@ const Academy = () => {
                     
                     <h4 className="text-2xl md:text-3xl font-bold mb-4">Academy Status</h4>
                     <p className="text-lg text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
-                        The academy is currently in development. Modules are being produced as high-definition video lessons with practical assignments, verified calculations, and direct mentorship paths.
+                        The Academy curriculum is currently in development. Modules will be released as high-definition video lessons with practical assignments, verified calculations, and mentorship pathways. Inquire below for curriculum details and program availability.
                     </p>
                     <a href="#newsletter" className="btn btn-primary btn-lg">
-                        Join the Waiting List for Launch
+                        Inquire for Academic Details
                     </a>
                 </div>
             </div>

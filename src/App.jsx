@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Home from './pages/Home';
+import AboutPage from './pages/About';
+import CoursesPage from './pages/Courses';
+import ResourcesPage from './pages/Resources';
+import ContactPage from './pages/Contact';
 import StudioPage from './pages/Studio';
 
 function App() {
@@ -16,17 +18,11 @@ function App() {
           <Route path="/studio/*" element={<StudioPage />} />
           
           {/* Main Website Routes */}
-          <Route path="/*" element={
-            <>
-              <Navbar />
-              <main>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                </Routes>
-              </main>
-              <Footer />
-            </>
-          } />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

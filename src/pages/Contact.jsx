@@ -61,7 +61,8 @@ const ContactPage = () => {
                                             <Phone size={24} className="text-gold flex-shrink-0 mt-1" />
                                             <div>
                                                 <h4 className="font-semibold">Phone</h4>
-                                                <p className="text-secondary">+965 97516360</p>
+                                                <p className="text-secondary">+965 97516360 (Kuwait)</p>
+                                                <p className="text-secondary">+201507147034 (Egypt)</p>
                                             </div>
                                         </div>
 

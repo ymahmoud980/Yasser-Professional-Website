@@ -23,8 +23,7 @@
     height: 100px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
-    /* Make it white for dark footer */
+    /* Removed filter that turned logo into white square */
 }
 
 .footer-logo {

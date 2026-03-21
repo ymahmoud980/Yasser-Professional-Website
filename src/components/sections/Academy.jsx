@@ -166,9 +166,9 @@ const Academy = () => {
                                     <span className="w-8 h-[1px] bg-blue mr-3"></span>
                                     Course Modules & Topics
                                 </h4>
-                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5">
                                     {track.topics.map((topic, tIdx) => (
-                                        <li key={tIdx} className="flex items-start text-base text-secondary hover:text-primary transition-colors py-1">
+                                        <li key={tIdx} className="flex items-start text-base text-secondary hover:text-primary transition-colors py-2">
                                             <CheckCircle size={20} className="text-blue mr-4 mt-0.5 flex-shrink-0 opacity-80" />
                                             <span>{topic}</span>
                                         </li>

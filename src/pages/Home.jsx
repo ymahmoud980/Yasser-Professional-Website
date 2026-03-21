@@ -5,24 +5,42 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ScrollToTop from '../components/layout/ScrollToTop';
 import SectionWrapper from '../components/layout/SectionWrapper';
-import { BookOpen, Award, Shield, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { BookOpen, Award, Shield, Users, ArrowRight, CheckCircle, Gauge, Cpu, Wrench, Handshake, GraduationCap } from 'lucide-react';
 
 const Home = () => {
-    const features = [
+    const coreDisciplines = [
         {
-            icon: <Shield size={32} className="text-gold" />,
+            icon: <Gauge size={36} className="feature-icon-svg" />,
+            title: "Instrumentation & Measurement",
+            desc: "Process measurement, field devices, analyzers, calibration, and hazardous area equipment selection for complex process media."
+        },
+        {
+            icon: <Cpu size={36} className="feature-icon-svg" />,
+            title: "Automation & Process Control",
+            desc: "DCS, SCADA, PLC architectures, PID tuning, advanced regulatory control, and industrial communication networks."
+        },
+        {
+            icon: <Shield size={36} className="feature-icon-svg" />,
             title: "Functional Safety",
-            desc: "Expert technical authority and safety lifecycle management."
+            desc: "Complete safety lifecycle per IEC 61508/61511 — HAZOP, SIL assessment & verification, SIS design, and safety integrity management."
+        }
+    ];
+
+    const servicePillars = [
+        {
+            icon: <Wrench size={36} className="feature-icon-svg" />,
+            title: "Engineering Solutions",
+            desc: "Full EPC lifecycle execution — P&IDs, control philosophies, system design, FAT/SAT, and plant commissioning."
         },
         {
-            icon: <BookOpen size={32} className="text-gold" />,
-            title: "Technical Education",
-            desc: "Field-proven training bridging complex theory and industrial reality."
+            icon: <Handshake size={36} className="feature-icon-svg" />,
+            title: "Consultation Services",
+            desc: "Technical authority, asset owner representation, project oversight, and safety-critical decision management."
         },
         {
-            icon: <Award size={32} className="text-gold" />,
-            title: "Engineering Consultancy",
-            desc: "Lead technical oversight for process measurement and control systems."
+            icon: <GraduationCap size={36} className="feature-icon-svg" />,
+            title: "Professional Training",
+            desc: "10-track Academy curriculum with 80+ modules — field-proven courses designed to transfer decades of hands-on experience."
         }
     ];
 
@@ -40,15 +58,43 @@ const Home = () => {
             <main>
                 <Hero />
                 
-                {/* Features Section */}
+                {/* Core Focus & Services Section */}
                 <section className="section bg-secondary">
                     <div className="container">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {features.map((feature, idx) => (
-                                <div key={idx} className="card text-center p-8">
-                                    <div className="flex justify-center mb-4">{feature.icon}</div>
-                                    <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                                    <p className="text-secondary">{feature.desc}</p>
+                        <div className="features-section-header">
+                            <span className="features-label font-mono">Our Focus & Services</span>
+                            <h2 className="features-main-title">Instrumentation, Automation, Process Control<br /><span className="text-gradient">&amp; Functional Safety</span></h2>
+                            <p className="features-subtitle">Delivering world-class expertise across three service pillars</p>
+                        </div>
+
+                        {/* Core Disciplines */}
+                        <div className="features-row-label">
+                            <span className="features-row-line"></span>
+                            <span className="features-row-text font-mono">Core Disciplines</span>
+                            <span className="features-row-line"></span>
+                        </div>
+                        <div className="features-grid">
+                            {coreDisciplines.map((feature, idx) => (
+                                <div key={idx} className="feature-tile">
+                                    <div className="feature-icon-wrap">{feature.icon}</div>
+                                    <h3 className="feature-tile-title">{feature.title}</h3>
+                                    <p className="feature-tile-desc">{feature.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Service Pillars */}
+                        <div className="features-row-label" style={{ marginTop: '3.5rem' }}>
+                            <span className="features-row-line"></span>
+                            <span className="features-row-text font-mono">Service Pillars</span>
+                            <span className="features-row-line"></span>
+                        </div>
+                        <div className="features-grid">
+                            {servicePillars.map((feature, idx) => (
+                                <div key={idx} className="feature-tile">
+                                    <div className="feature-icon-wrap">{feature.icon}</div>
+                                    <h3 className="feature-tile-title">{feature.title}</h3>
+                                    <p className="feature-tile-desc">{feature.desc}</p>
                                 </div>
                             ))}
                         </div>
